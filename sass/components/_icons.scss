@@ -1,0 +1,80 @@
+/* header */
+
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-nav__icon--mail {
+  width: 16px;
+  height: 12px;
+}
+
+.auth-nav__icon--smartphone {
+  width: 10px;
+  height: 16px;
+}
+
+/* regular-clients -- Постоянные клиенты */
+
+.regular-clients__icon {
+  width: 106px;
+  height: 60px;
+
+  fill: currentColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* modal */
+
+.icon-modal {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+
+  fill: currentColor;
+}
+
+.icon-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 11px;
+  height: 11px;
+  fill: currentColor;
+}
+
+/* features-icones */
+
+.feature__icon--group {
+  &::before {
+    background-image: url(../images/icon/icon-group.svg);
+  }
+}
+
+.feature__icon--clock {
+  &::before {
+    background-image: url(../images/icon/icon-clock.svg);
+  }
+}
+
+.feature__icon--diagram {
+  &::before {
+    background-image: url(../images/icon/icon-diagram.svg);
+  }
+}
+
+.feature__icon--astronaut {
+  &::before {
+    background-image: url(../images/icon/icon-astronaut.svg);
+  }
+}
