@@ -3,11 +3,9 @@
   justify-content: center;
   align-items: center;
   padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
-.social__item {
+.social__item:not(:last-child) {
   margin-right: 10px;
 }
 

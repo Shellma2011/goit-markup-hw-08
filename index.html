@@ -59,7 +59,7 @@
 
         <section class="hero">
 
-            <div class="container hero__section">
+            <div class="hero__section">
                 <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button class="button primary" type="button" data-modal-open>Заказать услугу</button>
             </div>
@@ -73,7 +73,7 @@
 
             <div class="container">
 
-                <ul class="feature__list list">
+                <ul class="feature__list">
                     <li class="feature__elements">
                         <div class="feature__block-icon">
                             <svg class="feature__icon" width="70" height="70">
@@ -121,7 +121,7 @@
 
         <!-- work -- Чем мы занимаемся -->
 
-        <section class="section work">
+        <!-- <section class="section work">
 
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
@@ -148,7 +148,7 @@
                 </ul>
             </div>
 
-        </section>
+        </section> -->
 
         <!-- our-team__section -- Наша команда -->
 
@@ -161,8 +161,14 @@
                 <ul class="our-team__list">
                     
                     <li class="our-team__elements">
-                        <img class="our-team__photo" src="./images/фотоИгорьДемьяненко.jpg" alt="фото Игорь Демьяненко" width="450">
-                        <div class="our-team__card">
+                        <picture  class="our-team__photo">
+                            <source srcset="./images/фотоИгорьДемьяненко-desk@1x.jpg 1x, ./images/фотоИгорьДемьяненко-desk@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)">
+                            <source srcset="./images/фотоИгорьДемьяненко-tabl@1x.jpg 1x, ./images/фотоИгорьДемьяненко-tabl@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)">
+                            <img
+                                srcset="./images/фотоИгорьДемьяненко-mob@1x.jpg 1x, ./images/фотоИгорьДемьяненко-mob@2x.jpg 2x"
+                                src="./images/фотоИгорьДемьяненко-mob@1x.jpg" alt="фото Игорь Демьяненко" width="450" height="460">
+                        </picture>
+                            <div class="our-team__card">
                             <h3 class="our-team__name">Игорь Демьяненко</h3>
                             <p class="our-team__position">Product Designer</p>
                             <ul class="social__list">
@@ -206,7 +212,14 @@
                     </li>
 
                     <li class="our-team__elements">
-                        <img class="our-team__photo" src="./images/фотоОльгаРепина.jpg" alt="фото Ольга Репина" width="450">
+                        <picture class="our-team__photo">
+                            <source srcset="./images/фотоОльгаРепина-desk@1x.jpg 1x, ./images/фотоОльгаРепина-desk@2x.jpg 2x"
+                                type="image/jpeg" media="(min-width: 1200px)">
+                            <source srcset="./images/фотоОльгаРепина-tabl@1x.jpg 1x, ./images/фотоОльгаРепина-tabl@2x.jpg 2x"
+                                type="image/jpeg" media="(min-width: 768px)">
+                            <img srcset="./images/фотоОльгаРепина-mob@1x.jpg 1x, ./images/фотоОльгаРепина-mob@2x.jpg 2x"
+                                src="./images/фотоОльгаРепина-mob@1x.jpg" alt="фото Ольга Репина" width="450" height="460">
+                        </picture>
                         <div class="our-team__card">
                             <h3 class="our-team__name">Ольга Репина</h3>
                             <p class="our-team__position">Frontend Developer</p>
@@ -250,7 +263,14 @@
                     </li>
 
                     <li class="our-team__elements">
-                        <img class="our-team__photo" src="./images/фотоНиколайТарасов.jpg" alt="фото Николай Тарасов" width="450">
+                        <picture class="our-team__photo">
+                            <source srcset="./images/фотоНиколайТарасов-desk@1x.jpg 1x, ./images/фотоНиколайТарасов-desk@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 1200px)">
+                            <source srcset="./images/фотоНиколайТарасов-tabl@1x.jpg 1x, ./images/фотоНиколайТарасов-tabl@2x.jpg 2x" type="image/jpeg"
+                                media="(min-width: 768px)">
+                            <img srcset="./images/фотоНиколайТарасов-mob@1x.jpg 1x, ./images/фотоНиколайТарасов-mob@2x.jpg 2x"
+                                src="./images/фотоНиколайТарасов-mob@1x.jpg" alt="фото Николай Тарасовфото Николай Тарасов" width="450" height="460">
+                        </picture>
                         <div class="our-team__card">  
                             <h3 class="our-team__name">Николай Тарасов</h3>
                             <p class="our-team__position">Marketing</p>
@@ -295,7 +315,15 @@
                     </li>
 
                     <li class="our-team__elements">
-                        <img class="our-team__photo" src="./images/фотоМихаилЕрмаков.jpg" alt="фото Михаил Ермаков" width="450">
+                        <picture class="our-team__photo">
+                            <source srcset="./images/фотоМихаилЕрмаков-desk@1x.jpg 1x, ./images/фотоМихаилЕрмаков-desk@2x.jpg 2x"
+                                type="image/jpeg" media="(min-width: 1200px)">
+                            <source srcset="./images/фотоМихаилЕрмаков-tabl@1x.jpg 1x, ./images/фотоМихаилЕрмаков-tabl@2x.jpg 2x"
+                                type="image/jpeg" media="(min-width: 768px)">
+                            <img srcset="./images/фотоМихаилЕрмаков-mob@1x.jpg 1x, ./images/фотоМихаилЕрмаков-mob@2x.jpg 2x"
+                                src="./images/фотоМихаилЕрмаков-mob@1x.jpg" alt="фото Михаил Ермаков" width="450"
+                                height="460">
+                        </picture>
                         <div class="our-team__card"> 
                             
                             <h3 class="our-team__name">Михаил Ермаков</h3>
@@ -349,7 +377,7 @@
 
         <!-- regular-clients -- Постоянные клиенты -->
 
-        <section class="section">
+        <!-- <section class="section">
 
             <div class="container">
             
@@ -411,11 +439,11 @@
             </div>
         </section>
 
-    </main>
+    </main> -->
 
     <!-- footer -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
 
         <div class="container footer__container">
 
@@ -499,11 +527,11 @@
                 </div>
             </div>
 
-    </footer>
+    </footer> -->
 
     <!-- modal -->
 
-    <div class="modal_backdrop is-hidden" data-modal>
+    <!-- <div class="modal_backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__button--icon-close" type="button" data-modal-close>
                 <svg class="icon-close">
@@ -557,7 +585,7 @@
     
             </form>
         </div>
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
 
