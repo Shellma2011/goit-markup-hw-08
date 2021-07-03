@@ -19,7 +19,6 @@
 // }
 
 .our-team__elements {
-  width: 100%;
   margin-bottom: 30px;
   max-width: 450px;
   background: var(--project-group-container-background-color);
@@ -34,7 +33,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    min-width: 270px;
     flex-basis: calc((100% - 120px) / 4);
   }
 
@@ -44,7 +42,7 @@
 
   & .our-team__photo {
     display: block;
-    width: 100%;
+    min-width: 100%;
   }
 
   & .our-team__name {
