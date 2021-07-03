@@ -20,7 +20,6 @@
     <header class="header">
 
         <div class="container header-container">
-
             
                 <a href="./index.html" class="logo">Web<span class="logo--header">Studio</span>
                 </a>
@@ -121,7 +120,7 @@
 
         <!-- work -- Чем мы занимаемся -->
 
-        <!-- <section class="section work">
+        <section class="section work">
 
             <div class="container">
                 <h2 class="section-title">Чем мы занимаемся</h2>
@@ -148,7 +147,7 @@
                 </ul>
             </div>
 
-        </section> -->
+        </section>
 
         <!-- our-team__section -- Наша команда -->
 
@@ -164,9 +163,8 @@
                         <picture  class="our-team__photo">
                             <source srcset="./images/фотоИгорьДемьяненко-desk@1x.jpg 1x, ./images/фотоИгорьДемьяненко-desk@2x.jpg 2x" type="image/jpeg" media="(min-width: 1200px)">
                             <source srcset="./images/фотоИгорьДемьяненко-tabl@1x.jpg 1x, ./images/фотоИгорьДемьяненко-tabl@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)">
-                            <img
-                                srcset="./images/фотоИгорьДемьяненко-mob@1x.jpg 1x, ./images/фотоИгорьДемьяненко-mob@2x.jpg 2x"
-                                src="./images/фотоИгорьДемьяненко-mob@1x.jpg" alt="фото Игорь Демьяненко" width="450" height="460">
+                            <source srcset="./images/фотоИгорьДемьяненко-mob@1x.jpg 1x, ./images/фотоИгорьДемьяненко-mob@2x.jpg 2x" type="image/jpeg" media="(min-width: 768px)">
+                            <img src="./images/фотоИгорьДемьяненко-mob@1x.jpg" alt="фото Игорь Демьяненко" width="450" height="460">
                         </picture>
                             <div class="our-team__card">
                             <h3 class="our-team__name">Игорь Демьяненко</h3>
@@ -377,7 +375,7 @@
 
         <!-- regular-clients -- Постоянные клиенты -->
 
-        <!-- <section class="section">
+        <section class="section">
 
             <div class="container">
             
@@ -439,11 +437,11 @@
             </div>
         </section>
 
-    </main> -->
+    </main>
 
     <!-- footer -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
 
         <div class="container footer__container">
 
@@ -505,33 +503,33 @@
             </div>
 
             <div class="footer__sign">
+
+
                 
                 <form class="footer-form">
-                    
-                    <label for="e-mail" class="footer-form__label">
+                        <b class="footer__title">Подпишитесь на рассылку</b>
 
-                    <b class="footer__title">Подпишитесь на рассылку</b>
+                        <div class="footer-form__block">
+                            <label for="e-mail" class="footer-form__label">
+                                <input type="email" class="footer-form__input" name="mail" id="e-mail" placeholder="E-mail">
+                            </label>
+                            
+                            <button type="submit" class="button primary">Подписаться
+                                <svg class="footer-icon__send">
+                                    <use href="./images/sprite.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </div>
                     
-                    <input type="email" class="footer-form__input" name="mail" id="e-mail" placeholder="E-mail">
-                    
-                    </label>
-
-                    <button type="submit" class="button primary">Подписаться
-                        <svg class="footer-icon__send">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                    
-
                 </form>
                 </div>
-            </div>
+        </div>
 
-    </footer> -->
+    </footer> 
 
     <!-- modal -->
 
-    <!-- <div class="modal_backdrop is-hidden" data-modal>
+    <div class="modal_backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__button--icon-close" type="button" data-modal-close>
                 <svg class="icon-close">
@@ -585,8 +583,8 @@
     
             </form>
         </div>
-    </div> -->
-
+    </div>
+ 
     <script src="./js/modal.js"></script>
 
 </body>

@@ -21,17 +21,15 @@
     
         <div class="container header-container">
     
-            <nav class="header-nav">
-                <a href="./index.html" class="logo">Web<span class="logo--header">Studio</span>
-                </a>
+            <a href="./index.html" class="logo">Web<span class="logo--header">Studio</span>
+            </a>
     
+            <nav class="header-nav">
                 <ul class="site-nav">
                     <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Студия</a></li>
                     <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link pseudo">Портфолио</a></li>
                     <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
                 </ul>
-    
-            </nav>
     
             <ul class="auth-nav">
                 <li class="header-nav__item"><a href="mailto:info@devstudio.com" class="header-nav__link">
@@ -46,6 +44,8 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            
+            </nav>
             
             </div>
             
@@ -301,7 +301,7 @@
     
                     <li class="social__item">
                         <a class="social__link--footer" href="">
-                            <svg class="social__icon">
+                            <svg class="social__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#twitter"></use>
                             </svg>
                         </a>
@@ -309,7 +309,7 @@
     
                     <li class="social__item">
                         <a class="social__link--footer" href="">
-                            <svg class="social__icon">
+                            <svg class="social__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#facebook"></use>
                             </svg>
                         </a>
@@ -317,7 +317,7 @@
     
                     <li class="social__item">
                         <a class="social__link--footer" href="">
-                            <svg class="social__icon">
+                            <svg class="social__icon" width="20" height="20">
                                 <use href="./images/sprite.svg#linkedin"></use>
                             </svg>
                         </a>
@@ -327,22 +327,22 @@
     
             <div class="footer__sign">
     
+    
+    
                 <form class="footer-form">
+                    <b class="footer__title">Подпишитесь на рассылку</b>
     
-                    <label for="e-mail" class="footer-form-label">
+                    <div class="footer-form__block">
+                        <label for="e-mail" class="footer-form__label">
+                            <input type="email" class="footer-form__input" name="mail" id="e-mail" placeholder="E-mail">
+                        </label>
     
-                        <b class="footer__title">Подпишитесь на рассылку</b>
-    
-                        <input type="email" class="footer-form__input" name="mail" id="e-mail" placeholder="E-mail">
-    
-                    </label>
-    
-                    <button type="submit" class="button primary">Подписаться
-                        <svg class="footer-icon__send">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
-    
+                        <button type="submit" class="button primary">Подписаться
+                            <svg class="footer-icon__send">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
     
                 </form>
             </div>
