@@ -23,6 +23,7 @@
 .feature__elements {
   width: 100%;
   margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
     min-width: 270px;
     flex-basis: calc((100% - 60px) / 2);
