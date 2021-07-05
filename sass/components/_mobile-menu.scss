@@ -1,0 +1,25 @@
+.menu__container {
+  position: relative;
+}
+
+.mobile__menu {
+  position: absolute;
+  background: #fff;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile__list__item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.mobile__contacts__item {
+}
