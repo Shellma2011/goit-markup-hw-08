@@ -1,3 +1,10 @@
 @mixin border($border-color) {
   border: 1px solid var($border-color);
 }
+
+@mixin fontStyle($fontWeight, $fontSize, $liHeig, $letSpac) {
+  font-weight: $fontWeight;
+  font-size: (#{$fontSize * 1px});
+  line-height: (#{$liHeig / $fontSize});
+  letter-spacing: (#{$letSpac * 0.01em});
+}

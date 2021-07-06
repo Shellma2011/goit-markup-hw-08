@@ -1,25 +1,102 @@
-.menu__container {
-  position: relative;
+.mobile__menu {
+  display: none;
 }
 
-.mobile__menu {
-  position: absolute;
-  background: #fff;
+.mobile__menu.is-open {
+  display: block;
+  position: fixed;
   top: 0;
+  left: 0;
+  background: #fff;
   width: 100vw;
   height: 100vh;
+
+  .menu__button--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .mobile__nav {
+    height: 100%;
+    padding: 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.menu__button {
+  display: inline-block;
+  background-color: $main-background-color;
+  border: none;
+
+  &--icon-open,
+  &--icon-close {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $accent-blue;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu__button--open {
+    display: none;
+  }
+}
+
+.mobile__social {
+  display: flex;
+  justify-self: start;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-right: 1px solid $accent-blue;
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+  }
 }
 
 .mobile__list__item {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
-
-  color: #212121;
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
-.mobile__contacts__item {
+.mobile__list__link {
+  @include fontStyle(500, 40, 47, 2);
+  color: $main-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-blue;
+  }
+}
+
+.mobile__contacts__item--tel {
+  margin-bottom: 32px;
+}
+.mobile__contacts__link--tel {
+  @include fontStyle(500, 34, 40, 2);
+  color: $accent-blue;
+}
+
+.mobile__contacts__link--mail {
+  @include fontStyle(500, 24, 28, 2);
+  color: $secondary-color;
+}
+
+.mobile__social__link {
+  @include fontStyle(500, 18, 22, 2);
+  color: $accent-blue;
 }

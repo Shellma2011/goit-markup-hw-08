@@ -4,7 +4,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--hero-footer-background-color);
+  background-color: $hero-footer-background-color;
 }
 
 .footer__container {
@@ -44,14 +44,14 @@
 }
 
 .footer__address {
-  color: var(--white-color);
+  color: $white-color;
   font-style: normal;
   line-height: 1.714;
   margin-bottom: 0px;
 }
 
 .contacts__list {
-  color: var(--color-mail-phone);
+  color: $color-mail-phone;
   text-decoration: none;
 
   display: inline-block;
@@ -78,7 +78,7 @@
 }
 
 .footer__title {
-  color: var(--white-color);
+  color: $white-color;
   margin-bottom: 20px;
   @extend %section__title-secondary;
 
@@ -148,7 +148,7 @@
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  background-color: var(--hero-footer-background-color);
+  background-color: $hero-footer-background-color;
 
   @media screen and (min-width: 768px) {
     max-width: 450px;

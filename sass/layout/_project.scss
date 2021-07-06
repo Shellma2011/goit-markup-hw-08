@@ -54,7 +54,7 @@
   }
 
   & .project__name {
-    color: var(--main-color);
+    color: $main-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -64,7 +64,7 @@
   }
 
   & .project__title {
-    color: var(--secondary-color);
+    color: $secondary-color;
     font-size: 16px;
     line-height: 1.875;
   }
@@ -81,9 +81,9 @@
   align-items: flex-start;
 
   padding: 20px 24px;
-  border-right: 1px solid var(--project-group-container-line-color);
-  border-bottom: 1px solid var(--project-group-container-line-color);
-  border-left: 1px solid var(--project-group-container-line-color);
+  border-right: 1px solid $project-group-container-line-color;
+  border-bottom: 1px solid $project-group-container-line-color;
+  border-left: 1px solid $project-group-container-line-color;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     height: 146px;

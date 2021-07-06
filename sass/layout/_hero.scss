@@ -8,7 +8,7 @@
   max-width: 480px;
   height: auto;
   @extend %hero-position-text;
-  background-color: var(--hero-footer-background-color);
+  background-color: $hero-footer-background-color;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -81,5 +81,5 @@
   line-height: 1.615;
   letter-spacing: 0.06em;
 
-  color: var(--white-color);
+  color: $white-color;
 }

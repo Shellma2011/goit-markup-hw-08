@@ -6,7 +6,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: var(--backdrop-color);
+  background-color: $backdrop-color;
 
   /* z-index: 2; */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -26,7 +26,7 @@
 
   max-width: 100%;
   max-height: 100%;
-  background-color: var(--white-color);
+  background-color: $white-color;
 
   @media screen and (min-width: 480px) {
     display: block;
@@ -49,12 +49,12 @@
   height: 30px;
   border-radius: 50%;
 
-  border: 1px solid var(--backdrop-bg-color);
-  background-color: var(--white-color);
+  border: 1px solid $backdrop-bg-color;
+  background-color: $white-color;
   cursor: pointer;
 
   &:hover {
-    color: var(--accent-blue);
+    color: $accent-blue;
   }
 }
 
@@ -85,8 +85,8 @@
     & .icon-modal,
     & .form__input {
       outline: none;
-      border-color: var(--accent-blue);
-      fill: var(--accent-blue);
+      border-color: $accent-blue;
+      fill: $accent-blue;
     }
   }
 }
@@ -97,14 +97,9 @@
   flex-direction: column;
   min-width: 100%;
   margin-bottom: 4px;
-  color: var(--main-color);
+  color: $secondary-color;
 
-  font-weight: 400px;
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
-
-  color: var(--secondary-color);
+  @include fontStyle(400, 12, 14, 1);
 }
 
 .form__input {
@@ -112,7 +107,7 @@
   padding: 11px 12px 11px 40px;
   min-width: 100%;
 
-  border: 1px solid var(--form-border-color);
+  border: 1px solid $form-border-color;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -122,7 +117,7 @@
   padding: 11px 12px 11px 12px;
   min-width: 100%;
   resize: none;
-  border: 1px solid var(--form-border-color);
+  border: 1px solid $form-border-color;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -130,26 +125,27 @@
 .form__text {
   margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include fontStyle(700, 20, 30, 3);
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
+  color: $main-color;
+
+  @media screen and (min-width: 1200px) {
+    @include fontStyle(700, 20, 23, 3);
+  }
 }
 
 .form__checkbox-text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include fontStyle(400, 12, 14, 3);
+  color: $secondary-color;
 
-  color: var(--secondary-color);
+  @media screen and (min-width: 1200px) {
+    @include fontStyle(400, 14, 24, 3);
+  }
 }
 
 .form__checkbox--check:checked + .form__check-policy::before {
-  background-color: var(--accent-blue);
-  border-color: var(--accent-blue);
+  background-color: $accent-blue;
+  border-color: $accent-blue;
   background-image: url(../images/icon/icon-vector.svg);
   background-repeat: no-repeat;
 }
@@ -173,12 +169,12 @@
     content: " ";
     width: 16px;
     height: 15px;
-    border: 2px solid var(--main-color);
+    border: 2px solid $main-color;
     border-radius: 2px;
   }
 }
 
 .form__checkbox-link {
   text-decoration: underline;
-  color: var(--accent-blue);
+  color: $accent-blue;
 }

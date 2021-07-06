@@ -1,14 +1,13 @@
 /* section-title */
 
 .section-title {
-  color: var(--main-color);
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.179;
+  color: $main-color;
   text-align: center;
-
+  @include fontStyle(700, 28, 33, 3);
   margin-top: 0px;
   margin-bottom: 30px;
-}
 
-// line-height: 1.189;
+  @media screen and (min-width: 1200px) {
+    @include fontStyle(700, 36, 42, 3);
+  }
+}

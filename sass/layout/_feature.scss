@@ -2,6 +2,10 @@
   & .feature__title {
     margin-bottom: 10px;
     @extend%section__title-secondary;
+    @include fontStyle(700, 14, 16, 3);
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 
   & .feature__text {
@@ -10,7 +14,7 @@
 
     @extend%section__text;
     text-align: start;
-    color: var(--secondary-color);
+    color: $secondary-color;
   }
 
   @media screen and (min-width: 768px) {
@@ -39,7 +43,7 @@
   height: 120px;
   margin-bottom: 30px;
 
-  background: var(--secondary-background-color);
+  background: $secondary-background-color;
   border-radius: 4px;
 }
 
@@ -60,7 +64,7 @@
 //   display: block;
 //   content: " ";
 //   height: 120px;
-//   background: var(--secondary-background-color);
+//   background: $secondary-background-color;
 //   border-radius: 4px;
 //   background-size: 70px 70px;
 //   background-repeat: no-repeat;
@@ -73,7 +77,7 @@
 //   height: 120px;
 //   margin-right: auto;
 //   margin-left: auto;
-//   background-color: var(--secondary-background-color);
+//   background-color: $secondary-background-color;
 //   margin-bottom: 30px;
 //   border-radius: 4px;
 // }

@@ -1,7 +1,7 @@
 /* our-team__section -- Наша команда */
 
 .our-team__section {
-  background-color: var(--secondary-background-color);
+  background-color: $secondary-background-color;
 }
 
 .our-team__list {
@@ -21,8 +21,8 @@
 .our-team__elements {
   margin-bottom: 30px;
   max-width: 450px;
-  background: var(--project-group-container-background-color);
-  box-shadow: var(--box-shadow-our-team-elements);
+  background: $main-background-color;
+  box-shadow: $box-shadow-our-team-color;
   border-radius: 0px 0px 4px 4px;
 
   text-align: center;
@@ -46,7 +46,7 @@
   }
 
   & .our-team__name {
-    color: var(--main-color);
+    color: $main-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -61,7 +61,7 @@
   }
 
   .our-team__position {
-    color: var(--secondary-color);
+    color: $secondary-color;
     font-size: 16px;
     line-height: 1.19;
   }
