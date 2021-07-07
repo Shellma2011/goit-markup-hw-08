@@ -948,7 +948,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .feature__list :not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1048,12 +1048,6 @@ ul {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 480px) {
-  .our-team__list :not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .our-team__list {
     display: grid;
@@ -1065,6 +1059,12 @@ ul {
 @media screen and (min-width: 1200px) {
   .our-team__list {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-team__elements:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
