@@ -19,10 +19,19 @@
     <!-- header -->
     <header class="header">
     
-        <div class="container header-container">
+    <div class="container header-container">
+        
+        <div class="header-menu__container">
     
             <a href="./index.html" class="logo">Web<span class="logo--header">Studio</span>
             </a>
+
+            <button class="menu__button menu__button--open js-open-menu" type="button">
+                <svg class="menu__button--icon-open">
+                    <use href="./images/sprite.svg#menu-open" width="24" height="16"></use>
+                </svg>
+            </button>
+        </div>
     
             <nav class="header-nav">
                 <ul class="site-nav">
@@ -31,25 +40,22 @@
                     <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
                 </ul>
     
-            <ul class="auth-nav">
-                <li class="header-nav__item"><a href="mailto:info@devstudio.com" class="header-nav__link">
-                        <svg class="auth-nav__icon auth-nav__icon--mail">
-                            <use href="./images/sprite.svg#mail"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="header-nav__item"><a href="tel:+380961111111" class="header-nav__link">
-                        <svg class="auth-nav__icon auth-nav__icon--smartphone">
-                            <use href="./images/sprite.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
-            
+                <ul class="auth-nav">
+                    <li class="header-nav__item"><a href="mailto:info@devstudio.com" class="header-nav__link">
+                            <svg class="auth-nav__icon auth-nav__icon--mail">
+                                <use href="./images/sprite.svg#mail"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li class="header-nav__item"><a href="tel:+380961111111" class="header-nav__link">
+                            <svg class="auth-nav__icon auth-nav__icon--smartphone">
+                                <use href="./images/sprite.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
             </nav>
-            
-            </div>
-            
-            </header>
+        </div>
+    </header>
 
     <!-- main -->
     <main>
@@ -96,7 +102,7 @@
                                         type="image/jpeg" media="(min-width: 768px)">
                                     <source srcset="./images/tehnokryak-mob@1x.jpg 1x, ./images/tehnokryak-mob@2x.jpg 2x"
                                         type="image/jpeg" media="(min-width: 480px)">
-                                    <img src="./images/tehnokryak.jpg" alt="презентация сайта на компьютере" width="370">
+                                    <img src="./images/tehnokryak.jpg" alt="презентация сайта на компьютере" width="100%">
                                 </picture>
                                 <p class="project__overlay">
                                     Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -124,7 +130,7 @@
                                         media="(min-width: 768px)">
                                     <source srcset="./images/poster-mob@1x.jpg 1x, ./images/poster-mob@2x.jpg 2x" type="image/jpeg"
                                         media="(min-width: 480px)">
-                                    <img src="./images/poster.jpg" alt="постер с баскетболистами" width="370">
+                                    <img src="./images/poster.jpg" alt="постер с баскетболистами" width="100%">
                                 </picture>
                                 <p class="project__overlay">
                                     Постер New Orlean vs Golden Star это современная площадка распространения коронавируса. Компании используют эту
@@ -152,7 +158,7 @@
                                         media="(min-width: 768px)">
                                     <source srcset="./images/seafood-mob@1x.jpg 1x, ./images/seafood-mob@2x.jpg 2x" type="image/jpeg"
                                         media="(min-width: 480px)">
-                                    <img src="./images/seafood.jpg" alt="лого рыбного ресторана" width="370">
+                                    <img src="./images/seafood.jpg" alt="лого рыбного ресторана" width="100%">
                                 </picture>
                                 <p class="project__overlay">
                                     Ресторан Seafood это современная площадка распространения коронавируса. Компании используют эту
@@ -179,7 +185,7 @@
                                         media="(min-width: 768px)">
                                     <source srcset="./images/prime-mob@1x.jpg 1x, ./images/prime-mob@2x.jpg 2x" type="image/jpeg"
                                         media="(min-width: 480px)">
-                                    <img src="./images/prime.jpg" alt="наушники" width="370">
+                                    <img src="./images/prime.jpg" alt="наушники" width="100%">
                                 </picture>
                                 <p class="project__overlay">
                                     Проект Prime это современная площадка распространения коронавируса. Компании используют эту
@@ -205,7 +211,7 @@
                                         media="(min-width: 768px)">
                                     <source srcset="./images/boxes-mob@1x.jpg 1x, ./images/boxes-mob@2x.jpg 2x" type="image/jpeg"
                                         media="(min-width: 480px)">
-                                    <img src="./images/boxes.jpg" alt="картонные коробки" width="370">
+                                    <img src="./images/boxes.jpg" alt="картонные коробки" width="100%">
                                 </picture>
                                 <p class="project__overlay">
                                     Проект Boxes это современная площадка распространения коронавируса. Компании используют эту
@@ -232,7 +238,7 @@
                                         media="(min-width: 768px)">
                                     <source srcset="./images/borders-mob@1x.jpg 1x, ./images/borders-mob@2x.jpg 2x" type="image/jpeg"
                                         media="(min-width: 480px)">
-                                    <img src="./images/borders.jpg" alt="компьютер моноблок" width="370">
+                                    <img src="./images/borders.jpg" alt="компьютер моноблок" width="100%">
                                 </picture>
                                 <p class="project__overlay">
                                     Inspiration has no Borders это современная площадка распространения коронавируса. Компании используют эту
@@ -259,7 +265,7 @@
                                         media="(min-width: 768px)">
                                     <source srcset="./images/edition-mob@1x.jpg 1x, ./images/edition-mob@2x.jpg 2x" type="image/jpeg"
                                         media="(min-width: 480px)">
-                                    <img src="./images/edition.jpg" alt="открытая книга" width="370">
+                                    <img src="./images/edition.jpg" alt="открытая книга" width="100%">
                                 </picture>
                                 <p class="project__overlay">
                                     Издание Limited Edition это современная площадка распространения коронавируса. Компании используют эту
@@ -286,7 +292,7 @@
                                         media="(min-width: 768px)">
                                     <source srcset="./images/lab-mob@1x.jpg 1x, ./images/lab-mob@2x.jpg 2x" type="image/jpeg"
                                         media="(min-width: 480px)">
-                                    <img src="./images/lab.jpg" alt="ярлык" width="370">
+                                    <img src="./images/lab.jpg" alt="ярлык" width="100%">
                                 </picture>
                                 <p class="project__overlay">
                                     Проект LAB это современная площадка распространения коронавируса. Компании используют эту
@@ -313,7 +319,7 @@
                                         media="(min-width: 768px)">
                                     <source srcset="./images/growing-mob@1x.jpg 1x, ./images/growing-mob@2x.jpg 2x" type="image/jpeg"
                                         media="(min-width: 480px)">
-                                    <img src="./images/growing.jpg" alt="руки на клавиатуре ноутбука" width="370">
+                                    <img src="./images/growing.jpg" alt="руки на клавиатуре ноутбука" width="100%">
                                 </picture>
                                 <p class="project__overlay">
                                     Growing Business это современная площадка распространения коронавируса. Компании используют эту
@@ -419,10 +425,41 @@
     
                 </form>
             </div>
-        </div>
-    
+        </div>   
     </footer>
+
+    <!-- mobile__menu -->
+    
+    <div class="mobile__menu js-menu-container">
+        <button class="menu__button menu__button--close js-close-menu" type="button">
+            <svg class="menu__button--icon-close">
+                <use href="./images/sprite.svg#button-close" width="19" height="19"></use>
+            </svg>
+        </button>
+        <nav class="mobile__nav container">
+            <ul class="mobile__list">
+                <li class="mobile__list__item"><a href="./index.html" class="mobile__list__link">Студия</a></li>
+                <li class="mobile__list__item"><a href="./portfolio.html" class="mobile__list__link">Портфолио</a></li>
+                <li class="mobile__list__item"><a href="" class="mobile__list__link">Контакты</a></li>
+            </ul>
+            <ul class="mobile__contacts">
+                <li class="mobile__contacts__item--tel">
+                    <a href="tel:+380961111111" class="mobile__contacts__link--tel">+38 096 111 11 11</a>
+                </li>
+                <li class="mobile__contacts__item--mail">
+                    <a href="mailto:info@devstudio.com" class="mobile__contacts__link--mail">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="mobile__social">
+                <li class="mobile__social__item"><a href="" class="mobile__social__link">Instagram</a></li>
+                <li class="mobile__social__item"><a href="" class="mobile__social__link">Twitter</a></li>
+                <li class="mobile__social__item"><a href="" class="mobile__social__link">Facebook</a></li>
+                <li class="mobile__social__item"><a href="" class="mobile__social__link">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <script defer src="js/mobile-menu.js"></script>
                 
-        </body>
-        
-        </html>
+</body>
+</html>
