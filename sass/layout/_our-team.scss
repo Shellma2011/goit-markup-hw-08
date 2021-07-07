@@ -47,9 +47,7 @@
 
   & .our-team__name {
     color: $main-color;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include fontStyle(500, 16, 19, 3);
 
     margin-top: 0px;
     margin-bottom: 10px;
@@ -62,7 +60,6 @@
 
   .our-team__position {
     color: $secondary-color;
-    font-size: 16px;
-    line-height: 1.19;
+    @include fontStyle(400, 16, 19, 3);
   }
 }

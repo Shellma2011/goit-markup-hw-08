@@ -46,8 +46,7 @@
 .footer__address {
   color: $white-color;
   font-style: normal;
-  line-height: 1.714;
-  margin-bottom: 0px;
+  @include fontStyle(400, 14, 24, 3);
 }
 
 .contacts__list {
@@ -78,13 +77,10 @@
 }
 
 .footer__title {
-  color: $white-color;
   margin-bottom: 20px;
   @extend %section__title-secondary;
-
-  @media screen and (min-width: 768px) {
-    text-align: center;
-  }
+  color: $white-color;
+  @include fontStyle(700, 14, 16, 3);
 }
 
 .footer__sign {

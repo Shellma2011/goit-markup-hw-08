@@ -55,18 +55,14 @@
 
   & .project__name {
     color: $main-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include fontStyle(700, 18, 36, 6);
 
     margin-bottom: 4px;
   }
 
   & .project__title {
     color: $secondary-color;
-    font-size: 16px;
-    line-height: 1.875;
+    @include fontStyle(400, 16, 30, 3);
   }
 }
 
