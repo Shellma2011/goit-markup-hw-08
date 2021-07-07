@@ -2,11 +2,10 @@
 
 .work {
   display: none;
-  margin-top: -94px;
 
   @media screen and (min-width: 1200px) {
     display: block;
-    padding-bottom: 94px;
+    padding-top: 0;
   }
 
   .work__list {
@@ -14,16 +13,11 @@
   }
 
   .work__item {
-    width: 100%;
-    margin-bottom: 30px;
-
-    max-width: 370px;
-
     position: relative;
   }
 
-  .work__item:last-child {
-    margin-right: 0px;
+  &:last-child {
+    margin-right: 30px;
   }
 
   .work__thumb > .work__text {

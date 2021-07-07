@@ -1,4 +1,15 @@
 .feature__list {
+  @media screen and (min-width: 768px) {
+    min-width: 270px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   & .feature__title {
     margin-bottom: 10px;
     @extend%section__title-secondary;
@@ -16,26 +27,10 @@
     text-align: start;
     color: $secondary-color;
   }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -30px;
-  }
 }
 
 .feature__elements {
   width: 100%;
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 768px) {
-    min-width: 270px;
-    flex-basis: calc((100% - 60px) / 2);
-    margin-left: 30px;
-  }
-  @media screen and (min-width: 1200px) {
-    flex-basis: calc((100% - 120px) / 4);
-  }
 }
 
 .feature__block-icon {
