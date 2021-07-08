@@ -52,13 +52,16 @@
     cursor: pointer;
   }
 
-  // @media screen and (min-width: 320px) {
-  //   width: 290px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   width: 226px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   width: 170px;
-  // }
+  @media screen and (min-width: 320px) {
+    width: 290px;
+  }
+  @media screen and (min-width: 320px) {
+    width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
 }
