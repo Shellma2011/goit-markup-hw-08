@@ -1183,7 +1183,7 @@ ul {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .regular-clients__link {
     width: 210px;
   }
