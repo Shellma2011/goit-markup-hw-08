@@ -122,11 +122,16 @@
   }
 
   & .header-nav__link {
-    color: $secondary-color;
-    @extend %header-nav__link;
-
     display: flex;
     align-items: center;
+
+    color: $secondary-color;
+    @extend %header-nav__link;
+    @include fontStyle(500, 12, 14, 2);
+
+    @media screen and (min-width: 1200px) {
+      @include fontStyle(500, 14, 16, 2);
+    }
 
     &:hover,
     &:focus {

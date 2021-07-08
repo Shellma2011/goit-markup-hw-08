@@ -862,9 +862,22 @@ ul {
 }
 
 .auth-nav .header-nav__link {
-  color: #757575;
   display: flex;
   align-items: center;
+  color: #757575;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav .header-nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14286;
+    letter-spacing: 0.02em;
+  }
 }
 
 .auth-nav .header-nav__link:hover, .auth-nav .header-nav__link:focus {
@@ -887,6 +900,10 @@ ul {
   padding-right: 60px;
   max-width: 480px;
   height: auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36364;
+  letter-spacing: 0.06em;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//..//images/img-hero-mob@1x.jpg);
   background-size: cover;
@@ -914,6 +931,11 @@ ul {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    max-width: 1600px;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    padding-left: 420px;
+    padding-right: 452px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//..//images/img-hero-desk@1x.jpg);
   }
