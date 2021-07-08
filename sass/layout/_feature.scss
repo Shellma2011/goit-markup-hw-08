@@ -1,5 +1,5 @@
 .feature__list {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.99px) {
     & :not(:last-child) {
       margin-bottom: 30px;
     }
@@ -19,7 +19,7 @@
     margin-bottom: 10px;
     @extend%section__title-secondary;
     @include fontStyle(700, 14, 16, 3);
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       text-align: start;
     }
   }
